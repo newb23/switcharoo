@@ -43,8 +43,9 @@
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="RebornBuddy">
-      <HintPath>..\Switcharoo\Libraries\RebornBuddy.exe</HintPath>
+    <Reference Include="RebornBuddy, Version=1.0.189.0, Culture=neutral, PublicKeyToken=48d7174f8a943034, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\RebornBuddy.exe</HintPath>
     </Reference>
     <Reference Include="Siune.Client">
       <HintPath>..\Switcharoo\Libraries\Siune.Client.dll</HintPath>

@@ -77,7 +77,6 @@
     <Compile Include="Controls\Numeric.xaml.cs">
       <DependentUpon>Numeric.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\ClientSession.cs" />
     <Compile Include="Switcharoo.cs" />
     <Compile Include="Utilities\Logger.cs" />
     <Compile Include="Models\Settings\BaseModel.cs" />
