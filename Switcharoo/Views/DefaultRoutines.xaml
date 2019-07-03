@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="Switcharoo.Views.DefaultRoutines"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:Switcharoo.ViewModels"
+             mc:Ignorable="d">
+
+    <UserControl.DataContext>
+        <viewModels:SettingsViewModel />
+    </UserControl.DataContext>
+
+    <Grid Margin="10" HorizontalAlignment="Center">
+        <StackPanel>
+            <StackPanel.DataContext>
+                <viewModels:SettingsViewModel />
+            </StackPanel.DataContext>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Grid.Row="0">
+                    <ComboBox Tag="Default Arcanist Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedArcanistRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Summoner Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedSummonerRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Scholar Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedScholarRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Archer / Bard Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedBardRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Conjurer / White Mage Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedWhiteMageRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Gladiator / Paladin Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedPaladinRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Lancer / Dragoon Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedDragoonRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Red Mage Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedRedMageRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Blue Mage Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedBlueMageRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Dancer Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedDancerRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                </StackPanel>
+                <StackPanel Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1">
+                    <ComboBox Tag="Default DoH/L" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Center" Width="260" SelectedItem="{Binding Settings.PreferedDoHlRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <ComboBox Tag="Default Marauder / Warrior Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedWarriorRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Pugilist / Monk Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedMonkRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Rouge / Ninja Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedNinjaRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Thaumaturge / Black Mage Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedBlackMageRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Machinist Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedMachinistRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Dark Knight Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedDarkKnightRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Astrologian Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedAstrologianRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Samurai Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedSamuraiRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Gunbreaker Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedGunbreakerRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>
