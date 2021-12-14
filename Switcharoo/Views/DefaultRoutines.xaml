@@ -35,8 +35,6 @@
                     <ComboBox Tag="Default Red Mage Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedRedMageRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
                     <ComboBox Tag="Default Blue Mage Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedBlueMageRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
                     <ComboBox Tag="Default Dancer Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedDancerRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
-                </StackPanel>
-                <StackPanel Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1">
                     <ComboBox Tag="Default DoH/L" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Center" Width="260" SelectedItem="{Binding Settings.PreferedDoHlRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
                 </StackPanel>
                 <StackPanel Grid.Row="0" Grid.Column="1">
@@ -49,6 +47,8 @@
                     <ComboBox Tag="Default Astrologian Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedAstrologianRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
                     <ComboBox Tag="Default Samurai Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedSamuraiRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
                     <ComboBox Tag="Default Gunbreaker Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedGunbreakerRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Reaper Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedReaperRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
+                    <ComboBox Tag="Default Sage Routine" Margin="2" Style="{DynamicResource SwitcharooComboBox}" HorizontalAlignment="Left" Width="260" SelectedItem="{Binding Settings.PreferedSageRoutine, UpdateSourceTrigger=LostFocus}" ItemsSource="{Binding Settings.CombatRoutineList}" />
                 </StackPanel>
             </Grid>
         </StackPanel>

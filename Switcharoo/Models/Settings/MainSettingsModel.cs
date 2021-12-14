@@ -22,7 +22,7 @@ namespace Switcharoo.Models
         private string _preferedArcanistRoutine, _preferedSummonerRoutine, _preferedScholarRoutine, _preferedBardRoutine, _preferedWhiteMageRoutine, _preferedPaladinRoutine,
             _preferedDragoonRoutine, _preferedWarriorRoutine, _preferedMonkRoutine, _preferedNinjaRoutine, _preferedBlankMageRoutine, _preferedMachinistRoutine,
             _preferedDarkKnightRoutine, _preferedAstrologianRoutine, _preferedDoHlRoutine, _preferedRedMageRoutine, _preferedSamuraiRoutine, _preferedBlueMageRoutine,
-            _preferedDancerRoutine, _preferedGunbreakerRoutine;
+            _preferedDancerRoutine, _preferedGunbreakerRoutine, _preferedReaperRoutine, _preferedSageRoutine;
 
         #region Prefered Routines
 
@@ -105,6 +105,14 @@ namespace Switcharoo.Models
         [Setting]
         public string PreferedGunbreakerRoutine
         { get { return _preferedGunbreakerRoutine; } set { _preferedGunbreakerRoutine = value; OnPropertyChanged(); } }
+
+        [Setting]
+        public string PreferedReaperRoutine
+        { get { return _preferedReaperRoutine; } set { _preferedReaperRoutine = value; OnPropertyChanged(); } }
+
+        [Setting]
+        public string PreferedSageRoutine
+        { get { return _preferedSageRoutine; } set { _preferedSageRoutine = value; OnPropertyChanged(); } }
 
         #endregion Prefered Routines
 

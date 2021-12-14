@@ -91,6 +91,12 @@ namespace Switcharoo.Utilities
                 case ClassJobType.Gunbreaker:
                     return MainSettingsModel.Instance.PreferedGunbreakerRoutine;
 
+                case ClassJobType.Reaper:
+                    return MainSettingsModel.Instance.PreferedReaperRoutine;
+
+                case ClassJobType.Sage:
+                    return MainSettingsModel.Instance.PreferedSageRoutine;
+
                 case ClassJobType.Alchemist:
                 case ClassJobType.Armorer:
                 case ClassJobType.Blacksmith:
